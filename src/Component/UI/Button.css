@@ -1,0 +1,14 @@
+.buttonStyle {
+  margin-top: 0.5rem;
+  background-color: #780752;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+}
+.buttonStyle:hover {
+  margin-top: 0.5rem;
+  background-color: #b70f7f;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+}

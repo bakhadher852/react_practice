@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+
+import Form from './Component/Form'
+import Items from './Component/Items'
+import Card from './Component/UI/Card'
 
 function App() {
+  const [listItem, setListItem] = useState('')
+
+  const newListData = (newItem) => {
+    setListItem((prevItem) => {
+      const updatedList = [...prevItem]
+      updatedList.unshift({
+        name: newItem.name,
+        age: newItem.age,
+        id: newItem.id,
+      })
+      return updatedList
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Card>
+        <Form listDataHandler={newListData} />
+      </Card>
+      <Card>
+        <Items list={listItem}></Items>
+      </Card>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

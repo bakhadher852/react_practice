@@ -1,0 +1,27 @@
+.innerFormStyle {
+  padding: 2rem;
+  font-weight: bold;
+  display: block;
+}
+.innerFormStyle input {
+  width: 90%;
+  padding: 0.2rem;
+  border: 0.3px solid rgba(0, 0, 0, 0.279);
+}
+.innerFormStyle label {
+  display: block;
+}
+.innerFormStyle button {
+  margin-top: 0.5rem;
+  background-color: #780752;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+}
+.innerFormStyle button:hover {
+  margin-top: 0.5rem;
+  background-color: #b70f7f;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+}

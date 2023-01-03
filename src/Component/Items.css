@@ -1,0 +1,9 @@
+.listItemStyle {
+  padding: 2rem;
+}
+.listItemStyle p {
+  border: 0.2px solid rgba(0, 0, 0, 0.279);
+  width: 90%;
+  padding: 0.2rem;
+  font-weight: bold;
+}
